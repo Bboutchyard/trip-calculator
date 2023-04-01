@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        CIS213 Unit 5, Final Exam
+        Author: Brandon Boutchyard
+        Date: 02/26/2023
+    -->
+    <meta charset="utf-8" />
+    <meta id="viewport" content="width=device-width, initial-scale=1.0,
+        maximum-scale=1.0, user-scalable=0">
+    <title>Final Exam PE</title>
+</head>
+<body>
+	<header>
+		<h1>Brandon Boutchyard, Trip Summary</h1>
+	</header>
+			<script>
+        const tripSummary = JSON.parse(localStorage.getItem("tripSummary")); //Create trip summary from JSON string
+        for (const key in tripSummary) {
+          document.write(`<p>${key}: ${tripSummary[key]}</p>`);
+        }
+      </script>
+</body>
+</html>
